@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import './Cart.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 import { getShoppingCart } from '../../utilities/fakedb';
 
-const Cart = ({cart}) => {
+const Cart = ({cart,handleClearCart}) => {
     let total = 0;
     let totalShipping = 0;
     let quantity = 0;
@@ -24,6 +26,8 @@ const Cart = ({cart}) => {
             <p>Shipping: BDT {totalShipping}</p>
             <p>Tax: BDT {tax.toFixed(2)}</p>
             <h4> Grand Total: BDT {grandTotal.toFixed(2)}</h4>
+            <button onClick={handleClearCart} className='btn-clear-cart'> <span>Clear cart</span><FontAwesomeIcon  icon={faTrashAlt} /></button>
+            <button className='btn-checkout-cart'> <span>Proceed Checkout</span><FontAwesomeIcon  icon={faTrashAlt} /></button>
         </div>
     );
 };
