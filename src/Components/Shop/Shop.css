@@ -9,3 +9,18 @@
     gap: 45px;
 
 }
+.link-btn{
+    text-decoration: none;
+}
+.btn-checkout-cart{
+    width: 90%;
+    height: 56px;
+    font-size: 18px;
+    margin: 10px auto;
+    background: orange;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -23,15 +23,3 @@
 .btn-clear-cart:hover{
     background: #e93636;
 }
-.btn-checkout-cart{
-    width: 90%;
-    height: 56px;
-    font-size: 18px;
-    margin: 10px auto;
-    background: orange;
-    border-radius: 4px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
