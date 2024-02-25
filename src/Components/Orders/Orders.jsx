@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const Orders = () => {
     const savedCart = useLoaderData();
     const [cart,setCart] = useState(savedCart);
-    console.log(savedCart);
+    
     const handleRemoveFromCart = (id) =>{
         const remeaning = cart.filter(product => product.id !== id);
         setCart(remeaning);
